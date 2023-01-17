@@ -1,0 +1,97 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/unity/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 153,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 168,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/unity/libunity.a"
+			],
+			"targetId" : "unity::@ce4e4b5101ff50e8b63a",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "library",
+			"destination" : "include/unity",
+			"paths" : 
+			[
+				"third_party/unity/src/unity.h",
+				"third_party/unity/src/unity_internals.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/unity",
+			"exportName" : "unityTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "unity::@ce4e4b5101ff50e8b63a",
+					"index" : 30
+				}
+			],
+			"paths" : 
+			[
+				"third_party/unity/CMakeFiles/Export/80da942aa44c821c5569bae18496db2c/unityTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/unity",
+			"paths" : 
+			[
+				"third_party/unity/unityConfig.cmake",
+				"cmake-build-debug/third_party/unity/unityConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/unity",
+		"source" : "third_party/unity"
+	}
+}
